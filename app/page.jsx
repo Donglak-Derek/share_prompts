@@ -1,7 +1,9 @@
+import Feed from "@components/Feed";
+
 const Home = () => {
   // fix flex-center?
   return (
-    <section className="w-full flex-center flex-col">
+    <section className="w-full flex items-center flex-col">
       <h1 className="head_text text-center">
         발견하고 공유하자! <br className="max-md:hidden" />
         <span className="orange_gradient text-center">
@@ -14,7 +16,7 @@ const Home = () => {
         프로프트를 창조하고 공유해요!
       </p>
 
-      {/** Feed */}
+      <Feed />
     </section>
   );
 };
