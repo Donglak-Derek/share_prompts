@@ -1,5 +1,6 @@
 import "@styles/globals.css";
 import Nav from "@components/Nav";
+import Provider from "@components/Provider";
 
 export const metadata = {
   title: "Ai 인공지능 프롬프트 천국",
@@ -10,14 +11,16 @@ const RootLayout = ({ children }) => {
   return (
     <html lang="kr">
       <body>
-        <div className="main">
-          <div className="gradient" />
-        </div>
+        <Provider>
+          <div className="main">
+            <div className="gradient" />
+          </div>
 
-        <main className="app">
-          <Nav />
-          {children}
-        </main>
+          <main className="app">
+            <Nav />
+            {children}
+          </main>
+        </Provider>
       </body>
     </html>
   );
