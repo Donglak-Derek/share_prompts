@@ -27,7 +27,7 @@ const Nav = () => {
           src="/assets/images/logo.svg"
           width={30}
           height={30}
-          alt="프롬프트 천국 로고"
+          alt="Prompt Heaven"
           className="object-contain"
         />
         <p className="logo_text">프롬프트 천국</p>
@@ -49,8 +49,8 @@ const Nav = () => {
                 src={session?.user.image}
                 width={37}
                 height={37}
+                alt="Profile picture"
                 className="rounded-full"
-                alt="profile"
               />
             </Link>
           </div>
@@ -81,8 +81,8 @@ const Nav = () => {
               src={session?.user.image}
               width={37}
               height={37}
+              alt="Profile"
               className="rounded-full"
-              alt="profile"
               onClick={() => setToggleDropdown((prev) => !prev)}
             />
 

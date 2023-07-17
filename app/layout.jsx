@@ -9,8 +9,8 @@ export const metadata = {
 
 const RootLayout = ({ children }) => {
   return (
-    <html lang="kr">
-      <body>
+    <html lang="en">
+      <body suppressHydrationWarning={true}>
         <Provider>
           <div className="main">
             <div className="gradient" />

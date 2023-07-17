@@ -33,7 +33,7 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
         >
           <Image
             src={post.creator.image}
-            alt="user_image"
+            alt="User Image"
             width={40}
             height={40}
             className="rounded-full object-contain"
@@ -58,6 +58,7 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
             }
             width={12}
             height={12}
+            alt="Copy icon"
           />
         </div>
       </div>
